@@ -1,0 +1,41 @@
+{
+    "name": "duzun/callback_cache",
+    "description": "Decorates a callback with cache (OPCache, FS) with LOCK_EX on write",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+      "callback",
+      "cache",
+      "decorator",
+      "lock",
+      "var_export",
+      "OPCache",
+      "PHP"
+    ],
+    "authors": [
+      {
+        "name": "Dumitru Uzun",
+        "email": "contact@duzun.me",
+        "homepage": "https://DUzun.Me",
+        "role": "Author"
+      }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "duzun\\CallbackCache\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "require": {
+      "php": ">=5.5"
+    },
+    "require-dev": {
+        "symfony/var-exporter": "^4.2"
+    },
+    "suggest": {
+      "symfony/var-exporter": "For improved `duzun\\CallbackCache\\PHP` storage"
+    }
+}
